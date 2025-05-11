@@ -321,9 +321,8 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px), (max-height: 500px) {
   .project {
-    display: grid;
     grid-template-columns: 1fr;
   }
 
@@ -333,6 +332,7 @@ body {
   }
 }
 
+
 .custom-link {
   color: #1a0dab;
   text-decoration: none;
@@ -341,4 +341,52 @@ body {
 
 .custom-link:hover {
   color: #4285f4;
+}
+#experience {
+  margin: 2rem auto 5rem;
+  text-align: center;
+}
+
+#experience .container {
+  max-width: var(--width-medium);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  margin-bottom: 2rem;
+}
+
+.grid-roles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.role-card {
+  background: var(--card-background);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+}
+
+.role-card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: var(--weight-semibold);
+}
+@media (max-width: 768px) {
+  .grid-roles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-roles {
+    grid-template-columns: 1fr;
+  }
 }
