@@ -160,8 +160,10 @@ body {
   width: 100%;
   height: 2px;
   background-color: var(--card-background);
-  margin: 5.5rem 0;
+  margin: 0.5rem 0;
 }
+
+
 /* Projects */
 #projects {
   display: flex;
@@ -389,4 +391,58 @@ body {
   .grid-roles {
     grid-template-columns: 1fr;
   }
+}
+.section-container {
+  max-width: var(--width-medium); 
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  line-height: 2;
+}
+.no-copy-number {
+  list-style: none;
+  counter-reset: item; /* Khởi tạo counter */
+  margin: 0;
+  padding: 0;
+}
+
+.no-copy-number li {
+  counter-increment: item; /* Tăng số mỗi li */
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem; /* chừa chỗ cho số thứ tự */
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.no-copy-number li::before {
+  content: counter(item) ". ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+.no-copy-circle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.no-copy-circle li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.no-copy-circle li::before {
+  content: "•"; /* dấu chấm */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.section-container h3 {
+  margin-left: 2rem; 
 }
