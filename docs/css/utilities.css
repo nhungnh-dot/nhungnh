@@ -10,6 +10,13 @@
   margin: 0 auto;
   padding: 1rem 2rem;
 }
+h1 {
+  font-size: 2.5rem; /* Kích thước chữ h1 */
+}
+
+h2 {
+  font-size: 2rem; /* Kích thước chữ h2 */
+}
 
 h1::selection,
 h2::selection {
