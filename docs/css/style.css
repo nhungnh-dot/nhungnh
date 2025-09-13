@@ -363,9 +363,15 @@ body {
 
 .grid-roles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  text-align: left;
+  grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+  gap: 20px;
+}
+
+.role-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
 }
 
 .role-card {
