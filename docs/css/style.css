@@ -363,12 +363,12 @@ body {
 
 .grid-roles {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+  gap: 20px; /* space between boxes */
 }
 
 .role-card {
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* optional: add border */
   padding: 15px;
   border-radius: 8px;
   background: #f9f9f9;
