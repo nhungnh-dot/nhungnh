@@ -452,3 +452,18 @@ body {
 .section-container h3 {
   margin-left: 2rem; 
 }
+
+
+
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.year-column p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
