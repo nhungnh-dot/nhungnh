@@ -404,26 +404,27 @@ body {
   padding-left: 1.5rem;
   line-height: 2;
 }
-/* OUTER numbered list only */
 .no-copy-number {
   list-style: none;
   counter-reset: item;
   padding-left: 0;
+  margin-left: 0;
 }
 
 .no-copy-number > li {
   counter-increment: item;
   position: relative;
-  margin-bottom: 2rem;
+  padding-left: 2rem;   /* 👈 controls alignment */
+  margin-bottom: 1rem;
 }
 
-/* ONLY top-level numbers */
 .no-copy-number > li::before {
-  content: counter(item) ". ";
-  font-weight: bold;
-  margin-right: 0.5rem;
+  content: counter(item) ".";
   position: absolute;
   left: 0;
+  font-weight: bold;
+  width: 1.5rem;
+  text-align: right;
 }
 .no-copy-circle {
   list-style: none;
