@@ -411,7 +411,7 @@ body {
   padding: 0;
 }
 
-.no-copy-number li {
+.no-copy-number > li {
   counter-increment: item; /* Tăng số mỗi li */
   position: relative;
   margin-bottom: 1rem;
@@ -420,7 +420,7 @@ body {
   font-size: 1.1rem;
 }
 
-.no-copy-number li::before {
+.no-copy-number > li::before {
   content: counter(item) ". ";
   position: absolute;
   left: 0;
